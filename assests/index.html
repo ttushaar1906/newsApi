@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>News App</title>
 </head>
+
 <body>
     <nav>
         <div class="nav-main flex container">
@@ -14,9 +16,9 @@
             </a>
             <div class="nav_links">
                 <ul class="flex">
-                    <li class="hover_link nav_item">Sports</li>
-                    <li class="hover_link nav_item">Politics</li>
-                    <li class="hover_link nav_item">Business</li>
+                    <li class="hover_link nav_item" id="Sports" onclick="onnavItemclick('Sports')">Sports</li>
+                    <li class="hover_link nav_item" id="Politics" onclick="onnavItemclick('Politics')">Politics</li>
+                    <li class="hover_link nav_item" id="Movies" onclick="onnavItemclick('Movies')">Movies</li>
                 </ul>
             </div>
             <div class="search_menu flex">
@@ -27,78 +29,23 @@
     </nav>
 
 
-    <!-- <main>
-        <div class="cards_container container flex">
-            <div class="cards">
-                <div class="cards-header">
-                    <img src="./images/logo.jpg" alt="">
-                </div>
-                <div class="card_container">
-                    <h3>This is heading</h3>
-                    <h6>this is title</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab fuga nesciunt, cupiditate officiis, quia quas non iste suscipit ducimus molestiae velit magnam repudiandae possimus? Earum nulla at obcaecati possimus!</p>
-                </div>
-            </div>
-        </div>
-         <div class="cards_container container flex">
-            <div class="cards">
-                <div class="cards-header">
-                    <img src="./images/logo.jpg" alt="">
-                </div>
-                <div class="card_container">
-                    <h3>This is heading</h3>
-                    <h6>this is title</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde cum quas, reiciendis hic quisquam iste neque at repudiandae officia.</p>
-                </div>
-            </div>
-        </div>
-    </main> -->
-    <main class="container main_container">
-        <div class="cards">
-        <div class="img-card">
-            <img src="./images/logo.jpg" alt="">
-        </div>
-            <h3>this is tittle</h3>
-            <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, fugiat?</h6>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus esse quam quae ullam alias rem sit itaque rerum qui tenetur accusantium reiciendis nulla, illum soluta voluptates suscipit. Odio, amet quo.</p>
-        </div>
-
-        <div class="cards">
-            <div class="img-card">
-                <img src="" alt="">
-            </div>    
-            <h3>this is tittle</h3>
-            <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, fugiat?</h6>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus esse quam quae ullam alias rem sit itaque rerum qui tenetur accusantium reiciendis nulla, illum soluta voluptates suscipit. Odio, amet quo.</p>
-        </div>
-
-        <div class="cards">
-            <div class="img-card">
-                <img src="" alt="">
-            </div>    
-            <h3>this is tittle</h3>
-            <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, fugiat?</h6>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus esse quam quae ullam alias rem sit itaque rerum qui tenetur accusantium reiciendis nulla, illum soluta voluptates suscipit. Odio, amet quo.</p>
-        </div>
-
-        <div class="cards">
-            <div class="img-card">
-                <img src="" alt="">
-            </div>    
-            <h3>this is tittle</h3>
-            <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, fugiat?</h6>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus esse quam quae ullam alias rem sit itaque rerum qui tenetur accusantium reiciendis nulla, illum soluta voluptates suscipit. Odio, amet quo.</p>
-        </div>
-
-        <div class="cards">
-            <img src="" alt="">
-            <h3>this is tittle</h3>
-            <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, fugiat?</h6>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus esse quam quae ullam alias rem sit itaque rerum qui tenetur accusantium reiciendis nulla, illum soluta voluptates suscipit. Odio, amet quo.</p>
-        </div>
-
-        
+    <main class="container main_container" id="card-container">
     </main>
+        <template id="template-card">
+            <div class="cards">
+                <div class="img-card">
+                    <img src="./images/logo.jpg" alt="" id="news-img">
+                </div>
+                <h3 id="news-title">this is tittle</h3>
+                <h6 class="news-source" id="news-source">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo,
+                    fugiat?</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus esse
+                    quam quae ullam alias rem sit itaque rerum qui tenetur accusantium reiciendis nulla, illum soluta
+                    voluptates suscipit. Odio, amet quo.</p>
+            </div>
+        </template>
+
     <script src="./jsFile.js"></script>
 </body>
+
 </html>

@@ -120,9 +120,13 @@ main{
 }
 .img-card{
     max-width:300px;
+    margin: 0 auto;
 }
 .img-card img{
     object-fit: cover;
     width: 100%;
     height: 200px;
+}
+.news-source{
+    margin-block: 12px;
 }
