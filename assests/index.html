@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/icon_logo.png">
     <title>News App</title>
 </head>
 
 <body>
     <nav>
         <div class="nav-main flex container">
-            <a href="#" class="news_logo">
-                <img src="./images/logo.jpg" alt="news_logo">
+            <a href="#" onclick="reload()" class="news_logo">
+                <img src="./images/icon_logo.png" alt="news_logo">
             </a>
             <div class="nav_links">
                 <ul class="flex">
@@ -22,8 +23,8 @@
                 </ul>
             </div>
             <div class="search_menu flex">
-                <input type="text" name="Search" class="search" id="" placeholder="eg science">
-                <button class="search_btn">Search</button>
+                <input id="search-text"  type="text" name="Search" class="search" id="" placeholder="eg science">
+                <button id="search-btn" class="search_btn">Search</button>
             </div>
         </div>
     </nav>
@@ -34,7 +35,7 @@
         <template id="template-card">
             <div class="cards">
                 <div class="img-card">
-                    <img src="./images/logo.jpg" alt="" id="news-img">
+                    <img src="" alt="" id="news-img">
                 </div>
                 <h3 id="news-title">this is tittle</h3>
                 <h6 class="news-source" id="news-source">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo,

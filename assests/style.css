@@ -64,6 +64,9 @@ nav{
 .hover_link:active{
     color: red;
 }
+.nav_item .active{
+    color: var(--accent-color-dark)
+}
 .search_menu{
     gap: 8px;
     height: 2rem;
@@ -94,7 +97,7 @@ nav{
 main{
     margin-top: 140px;
     padding-block: 20px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .main_container{
     display: flex;
@@ -104,8 +107,8 @@ main{
 }
 .cards{
     width: 350px;
-    min-height: 400px;
-    border: 2px solid blue;
+    height: 450px;
+    /* border: 2px solid blue; */
     margin: 10px 10px;
     padding: 10px;
     border-radius: 4px;
@@ -113,10 +116,12 @@ main{
     background-color: #fff;
     overflow: hidden;
     transition: all 0.2s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 4px 0px;
 }
 .cards:hover{
     background-color: #e6e9ed;
     transform: translateY(-2px);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .img-card{
     max-width:300px;
